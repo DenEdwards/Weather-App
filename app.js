@@ -51,6 +51,10 @@ app.post("/", function(req, res){
     });
 });
 
+app.use(function (req,res,next){
+	res.status(404).render("nopage",{Icon: "start"});
+});
+
 app.listen(3000, function(){
     console.log("Server Running on Port 3000...");
 });

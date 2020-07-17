@@ -3,6 +3,9 @@ $(document).ready(function() {
     const title = document.getElementById('title');
     const spotify = document.getElementById('spotify');
     const icon = document.getElementById('img-icon').innerHTML;
+    const date = new Date();
+    const year = date.getFullYear();
+    document.getElementById('year').innerText = year;
     if (true) {
         $("body").removeClass();     
         switch(icon) {

@@ -4,6 +4,8 @@ html, body {
 
 h3{
     padding: 40px 0;
+    width: 70%;
+    margin: auto;
 }
 
 .start{
@@ -204,6 +206,8 @@ h3{
 .bck-btn{
     margin: 10px auto;
 }
+
+
 /**********General**********/
 #img-icon{
     visibility: hidden; 
