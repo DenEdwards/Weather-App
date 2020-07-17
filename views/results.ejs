@@ -1,0 +1,30 @@
+<%- include("./partials/header.ejs")%>
+    <div class="results-container">
+        <div class="flex-container">
+            <div class="title" id="title">
+                <h1><%=Name%>, <%=Country%> </h1>
+            </div>
+            <div class="flex-el">
+                <h1>Temperature: <h2><%=Temp%> °C</h2> </h1>
+                <h1>Feels Like: <h2><%=FeelsLike%> °C</h2> </h1>
+            </div>
+            <div class="flex-el">
+                <h1>What it looks like: <h2><%=Des%></h2></h1>
+                <div class="img-bck">
+                    <img src=<%=ImageUrl%>></img>
+                </div>
+            </div>
+            <div class="flex-el">
+                <h1>Latitude and Longitude: <h2><%=Lat%>, <%=Lon%></h2></h1>
+            </div>
+            <div class="flex-el">
+                    <div id="spotify-btn"><i class="fab fa-spotify fa-4x"></i></i></div>
+                    <div id="spotify-player">
+                        <h1>A playlist for the weather:</h2></h1>
+                        <iframe id="spotify"src="" width="300" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>    
+            </div>
+        </div>
+        <a href="/"><button type="submit" class="btn btn-dark bck-btn">Back to Home</button></a>
+    </div>
+<%- include("./partials/footer.ejs")%>

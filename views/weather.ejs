@@ -1,0 +1,13 @@
+<%- include("./partials/header.ejs")%>
+        <div class="head-container">
+            <h1>Which Weather?</h1>
+            <div class="helper">
+                <div id="help"><i class="fas fa-question-circle fa-2x que-spin"></i></div>
+                <div id="help-panel"><p>This is my weather thing it will include more stuff: suggest clothes and what activity?</p></div>    
+            </div>
+            <form action="/" method="post">
+                <input name="cityName" id="cityInput" class="form-control search" type="text" placeholder="Enter a city..." aria-label="Search">
+                <button type="submit" class="btn btn-dark"><i class="fas fa-thermometer-half"></i></button>
+            </form> 
+        </div>
+<%- include("./partials/footer.ejs")%>
