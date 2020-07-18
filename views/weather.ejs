@@ -9,8 +9,12 @@
                 </div>    
             </div>
             <form action="/" method="post">
-                <input name="cityName" id="cityInput" class="form-control search" type="text" placeholder="Enter a city..." aria-label="Search">
-                <button type="submit" class="btn btn-dark"><i class="fas fa-thermometer-half"></i></button>
+                <div class="search-div">
+                    <input name="cityName" id="cityInput" class="form-control search" type="text" placeholder="City Name" aria-label="Search">
+                    <span class="search-bar">
+                        <button type="submit" class="btn btn-dark thermo"><i class="fas fa-thermometer-half"></i></button>
+                    </span>                
+                </div>
             </form> 
         </div>
 <%- include("./partials/footer.ejs")%>

@@ -8,10 +8,14 @@ h3{
     margin: auto;
 }
 
+h1{
+    font-size: 3rem;
+}
+
 .start{
     color: white;
-    background-color: #57545e;
-    background-image: url("../images/sunset.jpg");
+    background: #fb9224 url("../images/sunset.jpg") fixed center;
+    background-repeat: no-repeat;
 }
 
 .clear-sky-01d{
@@ -92,9 +96,11 @@ h3{
     top: 20px;
 }
 /**********Container**********/
+
+
 .head-container{
     font-family: 'Rubik', sans-serif;
-    margin: 100px 300px 0;
+    margin: 10% 10% 0;
     height: 400px;
     background-color: #fb9224;
     background-image: url("../images/cubes.png");
@@ -103,7 +109,7 @@ h3{
 }
 
 .head-container h1{
-    font-size: 4rem;
+    font-size: 5rem;
     padding: 30px 0;
 }
 
@@ -182,7 +188,6 @@ h3{
 
 .flex-container .title h1{
     width: 100%;
-    font-size: 5rem;
     color: #fff;
 }
 
@@ -205,6 +210,133 @@ h3{
 }
 .bck-btn{
     margin: 10px auto;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 1025px) {
+    .icon{
+        position: absolute;
+        left: 43%;
+        top: 8%;
+        font-size: 10rem;
+    }
+    .start {
+        background: #fb9224 url("../images/sunset.jpg") fixed center;
+        color: white;
+        background-repeat: no-repeat;
+        font-size: xxx-large;
+    }
+
+    .head-container h1{
+        font-size: 200%;
+    }
+
+    .head-container{
+        position: relative;
+        margin-top: 40%;
+        height: 100%;
+        background-image: url("../images/cubes.png");
+    }
+    #help-panel {
+        width: 70%;
+    }
+    .search-bar{
+        display: inline;
+    }
+
+    .search-div{
+        padding-bottom: 5%;
+    }
+
+    #cityInput{
+        padding: 32px 4px 20px;
+    }
+
+    .thermo{
+        width: 20%;
+        font-size: xx-large;
+    }
+
+    .bck{
+        margin-bottom: 5%;
+        font-size: xx-large;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .icon{
+        position: absolute;
+        left: 40%;
+        top: 8%;
+        font-size: 5rem;
+    }
+    .start {
+        background: #fb9224 url("../images/sunset.jpg") fixed center;
+        color: white;
+        background-repeat: no-repeat;
+        font-size: x-large;
+    }
+
+    .head-container h1{
+        font-size: 200%;
+    }
+
+    .head-container{
+        position: relative;
+        margin-top: 40%;
+        height: 100%;
+    }
+    #help-panel {
+        width: 70%;
+    }
+    .search-bar{
+        display: inline;
+        padding-bottom: 30%;
+    }
+
+    .search{
+        margin: 0 2%;
+    }
+
+    .thermo{
+        margin: 3% 0;
+        width: 20%;
+        font-size: xx-large;
+    }
+
+    .results-container{
+        position: relative;
+        margin-top: 40%;
+        height: 100%;
+    }
+
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .flex-container .title h1{
+        font-size: 2.5rem;
+    }
+
+    .flex-container .flex-el{
+        width: 90%;
+        padding: 50px 0;
+        margin: auto;
+    }
+
+    .flex-container .flex-el h1{
+        font-size: 2rem;
+    }
+
+    #spotify{
+        width: 245px;
+        height: 210px;
+    }
+
+    .bck{
+        margin-bottom: 5%;
+    }
 }
 
 
